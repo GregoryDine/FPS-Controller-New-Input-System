@@ -1,5 +1,4 @@
-# FPS-Controller-New-Input-System
-Unity Rigidbody FPS Controller using the new Input System
+# Unity Rigidbody FPS Controller using the new Input System
 
 **Setup :**
 
