@@ -15,3 +15,4 @@
 **Notes :**
 
   - In the "Scripts" Folder of the Package, you can find the "PlayerInputActions" Action Map to edit the keybinds
+  - Scripts and variables may not be commented and described enough so I'll let you play with it!
