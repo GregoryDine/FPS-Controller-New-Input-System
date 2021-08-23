@@ -252,7 +252,7 @@ public class PlayerMovement : MonoBehaviour
             //start crouching
             isCrouching = true;
             transform.localScale = crouchScale;
-            transform.position = new Vector3(transform.position.x, transform.position.y - (transform.position.y - crouchSize), transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y - (playerScale.y - crouchSize), transform.position.z);
             //start sliding if runnning while crouching
             if (rb.velocity.magnitude > 0.5f && isSprinting && canSlide)
             {
@@ -270,7 +270,7 @@ public class PlayerMovement : MonoBehaviour
             isSliding = false;
             isCrouching = false;
             transform.localScale = playerScale;
-            transform.position = new Vector3(transform.position.x, transform.position.y + (transform.position.y - crouchSize), transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y + (playerScale.y - crouchSize), transform.position.z);
         }        
     }
 }
