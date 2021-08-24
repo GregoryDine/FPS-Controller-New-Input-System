@@ -107,11 +107,7 @@ public class WallRun : MonoBehaviour
 
         rb.useGravity = false;
 
-        if (rb.velocity.y > wallRunGravity)
-        {
-            rb.AddForce(Vector3.down * wallRunGravity * playerMovement.jumpForce, ForceMode.Force);
-        }
-        else if (rb.velocity.y < wallRunGravity)
+        if (rb.velocity.y < wallRunGravity)
         {
             rb.velocity = new Vector3(rb.velocity.x, -wallRunGravity, rb.velocity.z);
         }
